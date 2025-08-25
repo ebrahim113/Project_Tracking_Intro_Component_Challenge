@@ -1,39 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Project tracking intro component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  Product
-  Features
-  Pricing
-  Login
-
-  New
-  Monograph Dashboard
-
-  Powerful insights into your team
-  Project planning and time tracking for agile teams
-
-  Schedule a demo
-  to see a live preview
-  
+  <div class="special"></div>
+  <div class="tracking">
+    <div class="container">
+      <header>
+        <div class="logo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+            <g fill="#323334" fill-rule="evenodd">
+              <path d="M0 32V.241h23.041zM31.15 32V.241h-4.411L17.48 13.158zM3.645 32l11.854-15.879L27.353 32z" />
+            </g>
+          </svg>
+        </div>
+        <nav>
+          <li>
+            <a href="#product">product</a>
+          </li>
+          <li>
+            <a href="#features">features</a>
+          </li>
+          <li>
+            <a href="#pricing">pricing</a>
+          </li>
+          <li>
+            <a href="#login">login</a>
+          </li>
+        </nav>
+        <svg class="humburger" xmlns="http://www.w3.org/2000/svg" width="24" height="16">
+          <g fill="#242942" fill-rule="evenodd">
+            <path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z" />
+          </g>
+        </svg>
+        <svg class="close" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+          <path fill="#242942" fill-rule="evenodd"
+            d="M17.778.808l1.414 1.414L11.414 10l7.778 7.778-1.414 1.414L10 11.414l-7.778 7.778-1.414-1.414L8.586 10 .808 2.222 2.222.808 10 8.586 17.778.808z" />
+        </svg>
+      </header>
+      <div class="content">
+        <div class="text">
+          <div class="head">
+            <p><span>new</span> monograph dashboard</p>
+            <h1>powerful insights into your team</h1>
+            <p>Project planning and time tracking for agile teams</p>
+          </div>
+          <div class="schedule">
+            <button>schedule a demo</button>
+            <p>to see a preview</p>
+          </div>
+        </div>
+        <div class="image">
+          <img src="images/illustration-devices.svg" alt="devices">
+        </div>
+      </div>
+    </div>
+  </div>
   <footer>
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/ebrahim113">ZedHawk</a>.
     </p>
   </footer>
+  <script src="main.js"></script>
 </body>
+
 </html>
